@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+:root {
+  --black: #1C2128;
+  --gray: #999999;
+  --gray-light: #E0E0E0;
+  --gray-dark: #424242;
+  --beige: #FAFAFA;
+  --white: #FFF;
+  --font-light: #9FA3B3;
+  --link-color: #004ED7;
+  --red: #FF4444;
+}

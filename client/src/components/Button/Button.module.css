@@ -1,0 +1,29 @@
+.button {
+    display: flex;
+
+    background: var(--white);
+    border: 1px solid var(--gray-light);
+    border-radius: 5px;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 7px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--gray-light);
+    color: var(--black);
+}
+
+.button:disabled {
+    background-color: var(--gray-light);
+    cursor: default;
+}

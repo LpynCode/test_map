@@ -1,0 +1,52 @@
+.input {
+    border: 2px solid var(--gray-light);
+    border-radius: 5px;
+    padding: 20px 15px 7px 36px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 140%;
+}
+
+.input::placeholder {
+    font-size: 13px;
+    color: var(--font-light);
+}
+
+.isError {
+    border: 2px solid var(--red);
+}
+
+.inputWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.icon {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+}
+
+.icon svg {
+    fill: var(--black);
+    width: 20px;
+    height: 20px;
+}
+
+.label {
+    top: 5px;
+    left: 17px;
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+}
+
+.error {
+    position: absolute;
+    background-color: var(--white);
+    color: var(--red);
+    font-size: 12px;
+    font-weight: 500;
+    right: 10px;
+    top: 5px;
+}
