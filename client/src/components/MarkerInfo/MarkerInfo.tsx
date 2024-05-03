@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { IMarker } from "../../types/marker.interface"
 import { Button } from "../Button/Button";
 import styles from './MarkerInfo.module.css'
-import { WebsocketContext } from "../../providers/WebsocketProvider/WebsocketProvider";
+import { WebsocketContext } from "../../context/websocket.context";
 import { IRemoveMarkerRequest } from "../../types/websocket/markers.interfaces";
 import { useMarkersStore } from "../../store/markers.store";
 import { UpdateMarkerForm } from "../UpdateMarkerForm/UpdateMarkerForm";

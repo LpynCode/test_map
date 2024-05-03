@@ -4,7 +4,7 @@ import { Input } from "../Input/Input";
 import { Button } from "../Button/Button";
 import styles from './CreateMarkerForm.module.css'
 import { useContext } from "react";
-import { WebsocketContext } from "../../providers/WebsocketProvider/WebsocketProvider";
+import { WebsocketContext } from "../../context/websocket.context";
 import { ICreateMarkerRequest } from "../../types/websocket/markers.interfaces";
 import { useMarkersStore } from "../../store/markers.store";
 

@@ -3,10 +3,10 @@ import { ICoordinates } from "../types/coordinates.interface"
 
 
 export const usePosition = () => {
-    const [position, setPosition] = useState<ICoordinates>([0, 0]);
+    const [position, setPosition] = useState<ICoordinates>({lat: 0, lng: 0});
 
     const onChange = ({coords: {latitude, longitude}}: GeolocationPosition) => {
-        setPosition([latitude, longitude]);
+        setPosition({lat: latitude, lng: longitude});
     };
 
 

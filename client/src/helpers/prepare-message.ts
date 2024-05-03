@@ -1,3 +1,3 @@
-import { IWebsocketMessage } from "../types/websocket/message.interface";
+import { IWebsocketMessageRequest } from "../types/websocket/message.interface";
 
-export const prepareMessage = (message: IWebsocketMessage) => JSON.stringify(message);
+export const prepareMessage = (message: IWebsocketMessageRequest<any>) => JSON.stringify(message);

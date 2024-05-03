@@ -1,5 +1,5 @@
 import { createContext, useState, useRef, useEffect, ReactNode } from "react";
-import { IWebsocketMessageRequest } from "../../types/websocket/message.interface";
+import { IWebsocketMessageRequest } from "../types/websocket/message.interface";
 
 
 interface IWebSocketContext {

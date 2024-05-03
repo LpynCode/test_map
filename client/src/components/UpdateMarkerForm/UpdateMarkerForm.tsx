@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
-import { WebsocketContext } from "../../providers/WebsocketProvider/WebsocketProvider";
+import { WebsocketContext } from "../../context/websocket.context";
 import { ICreateMarkerForm } from "../../types/forms/create-marker-form.interface";
 import { IUpdateMarkerForm } from "../../types/forms/update-marker-form.interface";
 import { Button } from "../Button/Button";

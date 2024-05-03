@@ -2,7 +2,7 @@ import './App.css'
 import { Map } from '../components/Map/Map';
 import { usePosition } from '../hooks/use-position';
 import { useContext, useEffect, useState } from 'react';
-import { WebsocketContext } from '../providers/WebsocketProvider/WebsocketProvider';
+import { WebsocketContext } from '../context/websocket.context';
 import { handleMessage } from '../helpers/handle-message';
 import Popup from '../components/Popup/Popup';
 import { useMarkersStore } from '../store/markers.store';
