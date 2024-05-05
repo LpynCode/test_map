@@ -1,0 +1,33 @@
+.card {
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 20px;
+    cursor: pointer;
+
+    box-shadow: 2px 2px 7px 0px #0000001A;
+
+    transition: box-shadow 0.3s;
+
+    &:hover {
+        box-shadow: 4px 4px 7px 0px #0000001A;
+    }
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.right_info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.user {
+    font-size: 13px;
+    color: var(--font-light);
+}

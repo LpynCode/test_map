@@ -8,7 +8,7 @@ interface MapViewProps {
     coordinates: ICoordinates,
 }
 export const MapView = ({ coordinates }: MapViewProps) => {
-    const { setCreatePopupData } = useMarkersStore();
+    const { setCreatePopupData, selectedMarker, selectMarker } = useMarkersStore();
 
     const onClick = (event: LeafletMouseEvent) => {
         setCreatePopupData({ lat: event.latlng.lat, lng: event.latlng.lng });
@@ -19,6 +19,14 @@ export const MapView = ({ coordinates }: MapViewProps) => {
     useEffect(() => {
         map.setView(coordinates, map.getZoom())
     }, [coordinates]);
+
+    useEffect(() => {
+        if (!selectedMarker) return;
+
+        map.flyTo(selectedMarker.coordinates, 16)
+        selectMarker(null);
+
+    }, [selectedMarker])
 
     return null;
 }

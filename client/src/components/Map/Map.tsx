@@ -25,10 +25,7 @@ export const Map = ({ coordinates, ...props }: MapProps) => {
     const onClick = (marker: IMarker) => {
         setPopupInfoData(marker);
     }
-    /*     const addNewMarker = (marker: IMarker) => {
-            sendMessage({ type: "markers.create", data: marker })
-            addMarker(marker);
-        } */
+
     return (
         <MapContainer className={styles.map} center={coordinates} zoom={13} scrollWheelZoom={true} {...props}>
             <TileLayer url={TILE_LAYER_URL} />

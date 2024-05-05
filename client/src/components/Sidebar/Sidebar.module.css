@@ -1,0 +1,48 @@
+.sidebar {
+    background-color: white;
+    width: 20%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    border-radius: 15px;
+    z-index: 3;
+
+    box-shadow: 2px 2px 7px 0px #0000001A;
+
+    overflow-y: auto;
+}
+
+.title {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 18px 20px 18px 20px;
+    border-bottom: 1px solid var(--gray-light);
+    text-align: center;
+
+    box-shadow: 2px 2px 7px 0px #0000001A;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    padding: 10px 20px 20px 20px;
+}
+
+.search {
+    padding: 5px 20px;
+}
+
+.markers_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
